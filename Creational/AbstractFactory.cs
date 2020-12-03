@@ -1,45 +1,10 @@
 //Estudos sobre refatoração de código - Abstract Factory
 using System;
+using RefactoringGuru.Creational.Interfaces;
+using RefactoringGuru.Creational.ConcreteFactory;
 
 namespace RefactoringGuru.Creational
 {
-	public interface IAbstractFactory
-	{
-		IAbstractProductA CreateProductA();
-		IAbstractProductB CreateProductB();
-	}
-	
-	public class ConcreteFactory1 : IAbstractFactory
-	{
-		public IAbstractProductA CreateProductA()
-		{
-			return new ConcreteProductA1();
-		}
-		
-		public IAbstractProductB CreateProductB()
-		{
-			return new ConcreteProductB1();
-		}
-	}
-	
-	public class ConcreteFactory2 : IAbstractFactory
-	{
-		public IAbstractProductA CreateProductA()
-		{
-			return new ConcreteProductA2();
-		}
-		
-		public IAbstractProductB CreateProductB()
-		{
-			return new ConcreteProductB2();
-		}
-	}
-	
-	public interface IAbstractProductA
-	{
-		string UsefulFunctionA();
-	}
-	
 	public class ConcreteProductA1 : IAbstractProductA
 	{
 		public string UsefulFunctionA()
@@ -54,13 +19,6 @@ namespace RefactoringGuru.Creational
 		{
 			return "The result of the product A2.";
 		}
-	}
-	
-	public interface IAbstractProductB
-	{
-		string UsefulFunctionB();
-		
-		string AnotherUsefulFunctionB(IAbstractProductA collaborator);
 	}
 	
 	public class ConcreteProductB1 : IAbstractProductB
