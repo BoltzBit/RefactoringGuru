@@ -2,8 +2,8 @@ namespace RefactoringGuru.Creational.Interfaces
 {
 	public interface IAbstractProductB
 	{
-		string UsefulFunctionB();
+		public string UsefulFunctionB();
 		
-		string AnotherUsefulFunctionB(IAbstractProductA collaborator);
+		public string AnotherUsefulFunctionB(IAbstractProductA collaborator);
 	}
 }

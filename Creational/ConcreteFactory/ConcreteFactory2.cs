@@ -1,4 +1,5 @@
 using RefactoringGuru.Creational.Interfaces;
+using RefactoringGuru.Creational.ConcreteProduct;
 
 namespace RefactoringGuru.Creational.ConcreteFactory
 {
