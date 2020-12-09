@@ -7,7 +7,8 @@ namespace RefactoringGuru
     {
         static void Main(string[] args)
         {
-            new Client().Main();
+            //new Client().Main();
+			new Client2().Main();
         }
     }
 }
