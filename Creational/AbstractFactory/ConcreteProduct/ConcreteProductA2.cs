@@ -1,6 +1,6 @@
-using RefactoringGuru.Creational.Interfaces;
+using RefactoringGuru.Creational.AbstractFactory.Interfaces;
 
-namespace RefactoringGuru.Creational.ConcreteProduct
+namespace RefactoringGuru.Creational.AbstractFactory.ConcreteProduct
 {
 	public class ConcreteProductA2 : IAbstractProductA
 	{

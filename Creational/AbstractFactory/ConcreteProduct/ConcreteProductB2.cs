@@ -1,12 +1,12 @@
-using RefactoringGuru.Creational.Interfaces;
+using RefactoringGuru.Creational.AbstractFactory.Interfaces;
 
-namespace RefactoringGuru.Creational.ConcreteProduct
+namespace RefactoringGuru.Creational.AbstractFactory.ConcreteProduct
 {
-	public class ConcreteProductB1 : IAbstractProductB
+	public class ConcreteProductB2 : IAbstractProductB
 	{
 		public string UsefulFunctionB()
 		{
-			return "This is a Product B1";
+			return "This is a Product B2";
 		}
 		
 		public string AnotherUsefulFunctionB(IAbstractProductA collaborator)

@@ -1,9 +1,9 @@
 //Estudos sobre refatoração de código - Abstract Factory
 using System;
-using RefactoringGuru.Creational.Interfaces;
-using RefactoringGuru.Creational.ConcreteFactory;
+using RefactoringGuru.Creational.AbstractFactory.Interfaces;
+using RefactoringGuru.Creational.AbstractFactory.ConcreteFactory;
 
-namespace RefactoringGuru.Creational
+namespace RefactoringGuru.Creational.Abstractfactory
 {
 	public class Client
 	{

@@ -1,4 +1,4 @@
-namespace RefactoringGuru.Creational.Interfaces
+namespace RefactoringGuru.Creational.AbstractFactory.Interfaces
 {
 	public interface IAbstractFactory
 	{
