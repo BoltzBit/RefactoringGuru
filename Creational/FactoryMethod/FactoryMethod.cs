@@ -1,57 +1,11 @@
 using System;
+using RefactoringGuru.Creational.FactoryMethod.Interfaces;
+using RefactoringGuru.Creational.FactoryMethod.Maker;
+using RefactoringGuru.Creational.FactoryMethod.ConcreteCreator;
+using RefactoringGuru.Creational.FactoryMethod.ConcreteProduct;
 
 namespace RefactoringGuru.Creational
 {
-	public abstract class Creator
-	{
-		public abstract IProduct FactoryMethod();
-		
-		public string SomeOperations()
-		{
-			var product = FactoryMethod();
-			var result = $"Creator: The same creator's code has just worked with: {product.Operation()}";
-			
-			return result;
-		}
-	}
-	
-	public interface IProduct
-	{
-		string Operation();
-	}
-	
-	public class ConcreteCreator1 : Creator
-	{
-		public override IProduct FactoryMethod()
-		{
-			return new ConcreteProduct1();
-		}
-	}
-	
-	public class ConcreteCreator2 : Creator
-	{
-		public override IProduct FactoryMethod()
-		{
-			return new ConcreteProduct2();
-		}
-	}
-	
-	public class ConcreteProduct1 : IProduct
-	{
-		public string Operation()
-		{
-			return "{Return of ConcreteProduct1}";
-		}
-	}
-	
-	public class ConcreteProduct2 : IProduct
-	{
-		public string Operation()
-		{
-			return "{Return of ConcreteProduct2}";
-		}
-	}
-	
 	public class Client2
 	{
 		public void Main()
